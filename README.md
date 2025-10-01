@@ -98,17 +98,12 @@ Multi-language support for better usability.
 
 ---
 
-⚠️ Disclaimer
-
-> Note:
-
-This project is developed for educational and research purposes only.
-
-The AI predictions are based on trained models and may not be 100% accurate in real-world scenarios.
-
-Always consult with certified doctors/health experts before making medical decisions.
-
-The developers are not responsible for any health risks, financial loss, or other consequences arising from the use of this system.
+## ⚠️ Disclaimer
+> *Note:*  
+> This project is developed for **educational and research purposes only**.  
+> The AI predictions are based on trained models and may not be **100% accurate** in real-world scenarios.  
+> Always consult with **certified doctors/health experts** before making medical decisions.  
+> The developers are **not responsible for any health risks, financial loss, or other consequences** arising from the use of this system.
 
 
 
@@ -124,3 +119,4 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
