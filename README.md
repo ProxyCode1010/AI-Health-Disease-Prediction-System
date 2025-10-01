@@ -13,7 +13,7 @@ The system uses machine learning and deep learning techniques to analyze pattern
 - [Usage](#🚀-usage)
 - [Future Scope](#🔮-future-scope)
 - [Disclaimer](#⚠️-disclaimer)
-- [Conclusion](#🏁 Conclusion)
+- [Conclusion](#🏁-Conclusion)
 
 ---
 
@@ -119,6 +119,7 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
 
 
 
