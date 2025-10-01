@@ -6,14 +6,14 @@ The system uses machine learning and deep learning techniques to analyze pattern
 ---
 
 ## 📋 Table of Contents
-- [Overview](#📖-overview)
-- [Key Features](#✨-key-features)
-- [Tech Stack](#🛠-tech-stack)
-- [Installation](#⚙️-installation)
-- [Usage](#🚀-usage)
-- [Future Scope](#🔮-future-scope)
-- [Disclaimer](#⚠️-disclaimer)
-- [Conclusion](#🏁-Conclusion)
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Scope](#future-scope)
+- [Disclaimer](#disclaimer)
+- [Conclusion](#conclusion)
 
 ---
 
@@ -119,6 +119,7 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
 
 
 
