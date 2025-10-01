@@ -66,6 +66,17 @@ streamlit run app.py
 
 
 ---
+## 📂 Dataset Sources
+The models are trained using publicly available datasets from:  
+- **[Kaggle](https://www.kaggle.com/)**  
+- Other open-source medical repositories  
+
+These datasets include structured medical data for **Heart Disease, Diabetes, Kidney Disease, Liver Disease**, and **Brain MRI images for tumor detection**.
+
+
+---
+
+
 
 ## 🔮 Future Scope
 
@@ -78,9 +89,6 @@ Adding more disease models like Cancer, Stroke, Alzheimer’s.
 Real-time monitoring via IoT-enabled wearable devices.
 
 Cloud deployment for wider accessibility.
-
-Multi-language support for better usability.
-
 
 
 
@@ -108,6 +116,7 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
 
 
 
