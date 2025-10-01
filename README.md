@@ -3,17 +3,6 @@
 An **AI-powered health prediction system** designed to predict the possibility of multiple diseases such as **Heart Disease, Liver Disease, Kidney Disease, Diabetes, and Brain Tumor** based on user input data like BPM, age, gender, heartbeat, and other medical parameters.  
 The system uses machine learning and deep learning techniques to analyze patterns and provide early warning predictions to help in preventive healthcare.  
 
----
-
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Future Scope](#future-scope)
-- [Disclaimer](#disclaimer)
-- [Conclusion](#conclusion)
 
 ---
 
@@ -119,6 +108,7 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
 
 
 
