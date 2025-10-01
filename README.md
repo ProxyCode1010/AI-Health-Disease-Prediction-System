@@ -66,16 +66,21 @@ streamlit run app.py
 
 
 ---
-## 📂 Dataset Sources
-The models are trained using publicly available datasets from:  
-- **[Kaggle](https://www.kaggle.com/)**  
-- Other open-source medical repositories  
 
-These datasets include structured medical data for **Heart Disease, Diabetes, Kidney Disease, Liver Disease**, and **Brain MRI images for tumor detection**.
+
+## 📂 Dataset Sources
+The models are trained using publicly available datasets from multiple reputable sources:  
+
+- **[Kaggle](https://www.kaggle.com/)** – Datasets for Heart Disease, Diabetes, Liver Disease, Kidney Disease.  
+- **[UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)** – Classical medical datasets for tabular data prediction tasks.  
+- **[PhysioNet](https://physionet.org/)** – Datasets for ECG, heartbeat, and other physiological signals.  
+- **[Open-Access Medical Image Databases](https://www.medicalimaging.org/)** – MRI and brain tumor image datasets.  
+- **Other open-source repositories** – For additional structured medical datasets.  
+
+> ⚠️ Note: The datasets are used strictly for research and educational purposes.  
 
 
 ---
-
 
 
 ## 🔮 Future Scope
@@ -116,6 +121,7 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
 
 
 
