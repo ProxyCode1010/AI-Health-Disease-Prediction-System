@@ -6,14 +6,14 @@ The system uses machine learning and deep learning techniques to analyze pattern
 ---
 
 ## 📋 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Future Scope](#future-scope)
-- [Disclaimer](#disclaimer)
-- [Conclusion](#conclusion)
+- [Overview](#📖-overview)
+- [Key Features](#✨-key-features)
+- [Tech Stack](#🛠-tech-stack)
+- [Installation](#⚙️-installation)
+- [Usage](#🚀-usage)
+- [Future Scope](#🔮-future-scope)
+- [Disclaimer](#⚠️-disclaimer)
+- [Conclusion](#🏁-conclusion)
 
 ---
 
@@ -60,7 +60,7 @@ streamlit run app.py
 
 ---
 
-🚀 Usage
+## 🚀 Usage
 
 1. Open the web app after running the above command.
 
@@ -78,7 +78,7 @@ streamlit run app.py
 
 ---
 
-🔮 Future Scope
+## 🔮 Future Scope
 
 > 📝 This project can be extended in the following ways:
 
@@ -111,7 +111,7 @@ Multi-language support for better usability.
 
 ---
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 This project demonstrates the potential of AI in healthcare by providing a system capable of predicting multiple diseases using patient data.
 Although it is not a replacement for medical professionals, it highlights how AI and machine learning can be used to assist in early detection, risk analysis, and preventive healthcare.
@@ -119,4 +119,5 @@ With future improvements, such systems can become powerful tools in global healt
 
 
 ---
+
 
