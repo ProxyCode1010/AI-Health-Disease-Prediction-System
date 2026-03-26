@@ -12,7 +12,7 @@ heart_model = pickle.load(open("model/heart_model.pkl", "rb"))  #model\heart_mod
 diabetes_model = pickle.load(open("model/diabetes_model.pkl", "rb"))
 kidney_model = pickle.load(open("model/kidney_model.pkl", "rb"))
 liver_model = pickle.load(open("model/liver_model.pkl", "rb"))
-brain_tumor_model = tf.keras.models.load_model('model/brain_tumor_model.h5')
+# brain_tumor_model = tf.keras.models.load_model('model/brain_tumor_model.h5')
 
 # Load scalers
 heart_scaler = pickle.load(open("model/heart_scaler.pkl", "rb"))
@@ -83,10 +83,7 @@ elif choice == "Diabetes":
         prediction = diabetes_model.predict(features)[0]
         st.success("Disease Detected" if prediction == 1 else "No Disease Detected")
 
-# -----------------------
-# Kidney Disease Prediction
-# -----------------------
-# 
+
 # -----------------------
 # Kidney Disease Prediction
 # -----------------------
@@ -177,27 +174,66 @@ elif choice == "Liver Disease":
 # -----------------------
 # Brain Tumor Prediction
 # -----------------------
+# -----------------------
+# Brain Tumor Prediction
+# -----------------------
 elif choice == "Brain Tumor":
     st.header("🧠 Brain Tumor Prediction")
 
+    if brain_tumor_model is None:
+        st.error("⚠️ Model not loaded. File size is greater than 25MB or file not uploaded.")
+
     uploaded_file = st.file_uploader("Upload Brain MRI Image", type=["jpg", "png", "jpeg"])
+
     if uploaded_file is not None:
         img = Image.open(uploaded_file)
         st.image(img, caption="Uploaded MRI Image", use_container_width=True)
 
-        # Preprocess image
-        img = img.convert("RGB")  # handles grayscale images
-        img = img.resize((150, 150))
-        img_array = image.img_to_array(img) / 255.0
-        img_array = np.expand_dims(img_array, axis=0)
+        if brain_tumor_model is not None:
+            # Preprocess image
+            img = img.convert("RGB")
+            img = img.resize((150, 150))
+            img_array = image.img_to_array(img) / 255.0
+            img_array = np.expand_dims(img_array, axis=0)
 
-        # Prediction
-        prediction = brain_tumor_model.predict(img_array)
-        predicted_class = brain_tumor_classes[np.argmax(prediction)]
+            # Prediction
+            prediction = brain_tumor_model.predict(img_array)
+            predicted_class = brain_tumor_classes[np.argmax(prediction)]
 
-        # Display
-        if predicted_class == "notumor":
-            st.success("✅ No Brain Tumor Detected")
+            # Output
+            if predicted_class == "notumor":
+                st.success("✅ No Brain Tumor Detected")
+            else:
+                st.error(f"⚠️ Brain Tumor Detected: {predicted_class.upper()}")
+
         else:
-            st.error(f"⚠️ Brain Tumor Detected: *{predicted_class.upper()}*")
+            # ✅ ELSE CONDITION (important)
+            st.warning("⚠️ Prediction not possible because model file size is greater than 25MB.")
+
+
+
+
+# elif choice == "Brain Tumor":
+#     st.header("🧠 Brain Tumor Prediction")
+
+#     uploaded_file = st.file_uploader("Upload Brain MRI Image", type=["jpg", "png", "jpeg"])
+#     if uploaded_file is not None:
+#         img = Image.open(uploaded_file)
+#         st.image(img, caption="Uploaded MRI Image", use_container_width=True)
+
+#         # Preprocess image
+#         img = img.convert("RGB")  # handles grayscale images
+#         img = img.resize((150, 150))
+#         img_array = image.img_to_array(img) / 255.0
+#         img_array = np.expand_dims(img_array, axis=0)
+
+#         # Prediction
+#         prediction = brain_tumor_model.predict(img_array)
+#         predicted_class = brain_tumor_classes[np.argmax(prediction)]
+
+#         # Display
+#         if predicted_class == "notumor":
+#             st.success("✅ No Brain Tumor Detected")
+#         else:
+#             st.error(f"⚠️ Brain Tumor Detected: *{predicted_class.upper()}*")
 
