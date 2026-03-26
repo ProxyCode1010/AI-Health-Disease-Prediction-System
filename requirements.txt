@@ -1,6 +1,5 @@
-tensorflow
+tensorflow==2.13.0
 pandas
-sklearn
-pickle
-numpy 
-glob
+numpy
+scikit-learn
+streamlit
