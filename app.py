@@ -14,6 +14,22 @@ kidney_model = pickle.load(open("kidney_model.pkl", "rb"))
 liver_model = pickle.load(open("liver_model.pkl", "rb"))
 # brain_tumor_model = tf.keras.models.load_model('model/brain_tumor_model.h5')
 
+# =======================
+# Load Brain Tumor Model Safely
+# =======================
+brain_tumor_model = None
+model_path = "model/brain_tumor_model.h5"
+
+if os.path.exists(model_path):
+    file_size = os.path.getsize(model_path) / (1024 * 1024)  # MB
+    
+    if file_size > 25:
+        brain_tumor_model = None
+    else:
+        brain_tumor_model = tf.keras.models.load_model(model_path)
+else:
+    brain_tumor_model = None
+    
 # Load scalers
 heart_scaler = pickle.load(open("heart_scaler.pkl", "rb"))
 diabetes_scaler = pickle.load(open("diabetes_scaler.pkl", "rb"))
