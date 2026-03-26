@@ -8,17 +8,17 @@ from PIL import Image
 # =======================
 # Load Models
 # =======================
-heart_model = pickle.load(open("model/heart_model.pkl", "rb"))  #model\heart_model.pkl
-diabetes_model = pickle.load(open("model/diabetes_model.pkl", "rb"))
-kidney_model = pickle.load(open("model/kidney_model.pkl", "rb"))
-liver_model = pickle.load(open("model/liver_model.pkl", "rb"))
+heart_model = pickle.load(open("heart_model.pkl", "rb"))  #model\heart_model.pkl
+diabetes_model = pickle.load(open("diabetes_model.pkl", "rb"))
+kidney_model = pickle.load(open("kidney_model.pkl", "rb"))
+liver_model = pickle.load(open("liver_model.pkl", "rb"))
 # brain_tumor_model = tf.keras.models.load_model('model/brain_tumor_model.h5')
 
 # Load scalers
-heart_scaler = pickle.load(open("model/heart_scaler.pkl", "rb"))
-diabetes_scaler = pickle.load(open("model/diabetes_scaler.pkl", "rb"))
-kidney_scaler = pickle.load(open("model/kidney_scaler.pkl", "rb"))
-liver_scaler = pickle.load(open("model/liver_scaler.pkl", "rb"))
+heart_scaler = pickle.load(open("heart_scaler.pkl", "rb"))
+diabetes_scaler = pickle.load(open("diabetes_scaler.pkl", "rb"))
+kidney_scaler = pickle.load(open("kidney_scaler.pkl", "rb"))
+liver_scaler = pickle.load(open("liver_scaler.pkl", "rb"))
 
 # =======================
 # Brain Tumor Classes
