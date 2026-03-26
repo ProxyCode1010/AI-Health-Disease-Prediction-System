@@ -252,3 +252,5 @@ elif choice == "Brain Tumor":
 #         else:
 #             st.error(f"⚠️ Brain Tumor Detected: *{predicted_class.upper()}*")
 
+st.caption("⚠️ For educational use only. AI predictions are not fully accurate—consult a medical professional before making decisions.")
+
