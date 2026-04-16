@@ -5,9 +5,7 @@ from tensorflow.keras.preprocessing import image
 import tensorflow as tf
 from PIL import Image
 
-# =======================
 # Load Models
-# =======================
 heart_model = pickle.load(open("heart_model.pkl", "rb"))  #model\heart_model.pkl
 diabetes_model = pickle.load(open("diabetes_model.pkl", "rb"))
 kidney_model = pickle.load(open("kidney_model.pkl", "rb"))
@@ -15,9 +13,7 @@ liver_model = pickle.load(open("liver_model.pkl", "rb"))
 # brain_tumor_model = tf.keras.models.load_model('model/brain_tumor_model.h5')
 
 import os   # make sure this is at top
-# =======================
 # Load Brain Tumor Model Safely
-# =======================
 brain_tumor_model = None
 model_error = "⚠️ Brain tumor model not available (file >25MB or not uploaded)"
 
@@ -35,23 +31,17 @@ diabetes_scaler = pickle.load(open("diabetes_scaler.pkl", "rb"))
 kidney_scaler = pickle.load(open("kidney_scaler.pkl", "rb"))
 liver_scaler = pickle.load(open("liver_scaler.pkl", "rb"))
 
-# =======================
 # Brain Tumor Classes
 # =======================
-# Direct mapping (since you already used this in training)
 brain_tumor_classes = ['glioma', 'meningioma', 'notumor', 'pituitary']
 
-# =======================
 # Streamlit UI
-# =======================
 st.title("🩺 AI Health Disease Prediction System")
 
 menu = ["Heart Disease", "Diabetes", "Kidney Disease", "Liver Disease", "Brain Tumor"]
 choice = st.sidebar.selectbox("Select Disease to Predict", menu)
 
-# -----------------------
 # Heart Disease Prediction
-# -----------------------
 if choice == "Heart Disease":
     st.header("❤️ Heart Disease Prediction")
 
@@ -76,9 +66,7 @@ if choice == "Heart Disease":
         prediction = heart_model.predict(features)[0]
         st.success("Disease Detected" if prediction == 1 else "No Disease Detected")
 
-# -----------------------
 # Diabetes Prediction
-# -----------------------
 elif choice == "Diabetes":
     st.header("🩸 Diabetes Prediction")
 
@@ -99,9 +87,7 @@ elif choice == "Diabetes":
         st.success("Disease Detected" if prediction == 1 else "No Disease Detected")
 
 
-# -----------------------
 # Kidney Disease Prediction
-# -----------------------
 elif choice == "Kidney Disease":
     st.header("🧪 Kidney Disease Prediction")
 
@@ -158,9 +144,8 @@ elif choice == "Kidney Disease":
         prediction = kidney_model.predict(features)[0]
         st.success("Disease Detected" if prediction == 1 else "No Disease Detected")
 
-# -----------------------
+
 # Liver Disease Prediction
-# -----------------------
 elif choice == "Liver Disease":
     st.header("🧬 Liver Disease Prediction")
 
@@ -186,12 +171,7 @@ elif choice == "Liver Disease":
         st.success("Disease Detected" if prediction == 1 else "No Disease Detected")
 
 
-# -----------------------
 # Brain Tumor Prediction
-# -----------------------
-# -----------------------
-# Brain Tumor Prediction
-# -----------------------
 elif choice == "Brain Tumor":
     st.header("🧠 Brain Tumor Prediction")
 
