@@ -16,7 +16,7 @@ It can act as a **supportive tool for doctors** and a **self-checkup system for 
 ## ✨ Key Features
 - ✅ Predicts multiple diseases: **Heart, Liver, Kidney, Diabetes, Brain Tumor**  
 - ✅ Uses **Machine Learning & Deep Learning models**  
-- ✅ User-friendly web interface  
+- ✅ User-friendly web interface 
 - ✅ Data-driven predictions based on medical attributes  
 - ✅ Can assist in **early detection & prevention**  
 
